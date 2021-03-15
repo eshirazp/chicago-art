@@ -77,7 +77,7 @@ const Gallery: FunctionComponent<IGalleryProps> = ({
       >
         <div className="content">
           {artData.length === 0 ? (
-            <h3>{"No images found, but at least you got a deep dish"}</h3>
+            <h3>{"No images found. Grab yourself a deep dish :) "}</h3>
           ) : (
             artData.map((art, idx) => {
               const artDetails: ArtDetails = getArtDetails(art);
