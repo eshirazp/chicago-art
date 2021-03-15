@@ -1,0 +1,40 @@
+.header {
+  height: 70px;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-aic-red);
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.navigation {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+
+  .link {
+    text-decoration: none;
+    color: var(--color-text);
+  }
+}
+
+.darkMode {
+  width: 20%;
+  text-align: right;
+
+  .dot {
+    height: 25px;
+    width: 25px;
+    background-color: var(--color-page-background);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+}

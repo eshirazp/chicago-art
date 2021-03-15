@@ -1,0 +1,33 @@
+.pageNav-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  div {
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+
+  .pages {
+    display: inline-block;
+
+    .current-page {
+      color: var(--color-aic-red);
+      cursor: default;
+      margin: 8px;
+    }
+  }
+
+  .round {
+    border-radius: 50%;
+    background-color: var(--color-aic-red);
+    color: var(--color-text);
+
+    &:hover {
+      background-color: var(--color-border);
+      color: var(--color-aic-red);
+    }
+  }
+}
