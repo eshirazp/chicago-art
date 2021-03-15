@@ -1,0 +1,49 @@
+$color-black: rgb(48, 64, 77);
+$color-white: rgb(245, 248, 250);
+$color-gray-light: rgba($color-white, 0.15);
+$color-gray-dark: rgba($color-black, 0.15);
+$aic-red: rgba(206, 36, 69, 0.9);
+$aic-dark-red: rgba(141, 17, 42, 0.9);
+
+:root {
+  --color-page-background: #{$color-gray-dark};
+  --color-text: #{$color-black};
+  --color-border: #{$color-black};
+  --color-article-background: #{$color-white};
+  --color-article-shadow: #{$color-gray-dark};
+  --color-aic-red: #{$aic-red};
+  --color-aic-dark-red: #{$aic-dark-red};
+  --color-light-background: #{$color-gray-light};
+}
+
+.dark {
+  --color-page-background: #{$color-black};
+  --color-text: #{$color-white};
+  --color-border: #{$color-white};
+  --color-article-background: #{$color-gray-light};
+  --color-article-shadow: #{$color-gray-dark};
+  --color-aic-red: #{$aic-red};
+  --color-aic-dark-red: #{$aic-dark-red};
+  --color-light-background: #{$color-gray-light};
+}
+
+* {
+  transition: all 0.15s ease;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--color-page-background);
+  color: var(--color-text);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

@@ -1,0 +1,33 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 110px);
+  width: 100vw;
+
+  img {
+    position: absolute;
+    height: calc(100vh - 110px);
+    width: 100vw;
+  }
+
+  .container {
+    width: 30%;
+    min-width: 150px;
+    height: 30%;
+    min-height: 280px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    display: inline-grid;
+
+    :is(h1, h3) {
+      text-align: center;
+      color: var(--color-text);
+    }
+
+    h1 {
+      background-color: var(--color-aic-red);
+    }
+  }
+}
